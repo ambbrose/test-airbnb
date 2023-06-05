@@ -11,7 +11,7 @@
       },
       {
         "src": "prisma/schema.prisma",
-        "use": "@prisma/cli"
+        "use": "prisma"
       }
     ],
     "routes": [
