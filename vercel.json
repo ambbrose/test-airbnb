@@ -1,6 +1,0 @@
-"build": {
-  "commands": [
-    "prisma generate",
-    "next build"
-  ]
-}
