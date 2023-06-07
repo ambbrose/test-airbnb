@@ -30,16 +30,16 @@ export async function generateMetadata({ params }: { params: IParams }): Promise
     };
 };
 
-// export async function generateStaticParams() {
+export async function generateStaticParams() {
 
-//     const listings = await getListings({});
+    const listings = await getListings({});
 
-//     if (!listings) return [];
+    if (!listings) return [];
 
-//     return listings.map((listing) => ({
-//         listingId: listing.id
-//     }));
-// };
+    return listings.map((listing) => ({
+        listingId: listing.id
+    }));
+};
 
 const ListingPage = async ({ params }: { params: IParams }) => {
 
