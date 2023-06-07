@@ -5,6 +5,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 
 import Avatar from "../Avatar";
 import MenuItem from "./MenuItem";
+import Logo from "./Logo";
 
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
@@ -84,6 +85,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                             currentUser ?
                                 (
                                     <>
+                                        <Logo />
                                         <MenuItem onClick={() => router.push('/trips')} label="My trips" />
                                         <MenuItem onClick={() => router.push('/favorites')} label="My favorites" />
                                         <MenuItem onClick={() => router.push('/reservations')} label="My reservations" />
