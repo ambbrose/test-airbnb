@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && prisma generate && next export",
+    "build": "next build && npm run prisma:generate && next export",
+    "prisma:generate": "npx prisma generate",
     "start": "next start",
     "lint": "next lint"
   },
