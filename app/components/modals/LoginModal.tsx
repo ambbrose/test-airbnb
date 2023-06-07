@@ -112,6 +112,7 @@ const LoginModal = () => {
             />
             <Button
                 outline
+                disabled={true}
                 icon={AiFillGithub}
                 label="Continue with Github"
                 onClick={() => handleSocialSignin('github')}
